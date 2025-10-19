@@ -36,5 +36,3 @@ function AbrirSecaoDashboard() {
     divCadastro.classList.add("hidden")
     divDashboard.classList.remove("hidden")
 }
-
-AbrirSecaoDashboard()
