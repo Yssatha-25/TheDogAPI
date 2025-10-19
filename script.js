@@ -3,16 +3,38 @@ const chaveAPI = "live_wI4P9KK5UZPUPmZ3uN44sp05bhjLnkCRj9RcthA9D41ugrwz9EFr7wCvm
 
 const headers = new Headers({
     "Context-type": "application/json",
-    "x-api-key": chaveAPI 
+    "x-api-key": chaveAPI
 })
 
 const requestOptions = {
     method: "GET",
-    headers:headers,
+    headers: headers,
     readirect: "follow"
 }
 
 fetch(url)
-.then(res => res.json())
-.then(dados => console.log(dados))
-.catch(erro => console.log(erro.message))
+    .then(res => res.json())
+    .then(dados => console.log(dados))
+    .catch(erro => console.log(erro.message))
+
+const divLogin = document.getElementById("SecaoLoginDiv")
+const divCadastro = document.getElementById("SecaoCadastroDiv")
+const divDashboard = document.getElementById("SecaoDashboard")
+
+function AbrirCadastro() {
+    divLogin.classList.add("hidden")
+    divCadastro.classList.remove("hidden")
+}
+
+function AbrirLogin() {
+    divLogin.classList.remove("hidden")
+    divCadastro.classList.add("hidden")
+}
+
+function AbrirSecaoDashboard() {
+    divLogin.classList.add("hidden")
+    divCadastro.classList.add("hidden")
+    divDashboard.classList.remove("hidden")
+}
+
+AbrirSecaoDashboard()

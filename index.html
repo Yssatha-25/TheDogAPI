@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dog API</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -21,7 +21,7 @@
     <h1>The Dog API</h1>
 
     <div class="container" id="SecaoLoginDiv">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <section id="secao_login">
             <form id="form_login">
                 <label>usuario: <input type="text" placeholder="Digite seu usuário"></label>
@@ -38,7 +38,7 @@
             </form>
     </div>
 
-    <div class="container" id="SecaoCadastroDiv">
+    <div class="container hidden" id="SecaoCadastroDiv">
         <h2>Cadastro</h2>
         <section id="secao_cadastro">
             <form id="form_cadastro">
@@ -57,7 +57,7 @@
                 <button onclick="RealizarCadastro()">Realizar cadastro</button>
             </form>
             <br>
-            
+
             <div class="link-container">
                 <span>Já tem uma conta? </span>
                 <a href="#" onclick="AbrirLogin()">Faça o Login</a>
@@ -65,12 +65,12 @@
         </section>
     </div>
 
-    <div class="dashboardContainer" id="SecaoDashboard">
-        <h1>Raças de cachorro</h1>
-
+    <div class="dashboardContainer hidden" id="SecaoDashboard">
         <button onclick="FazerLogout()">Fazer logout</button>
-
+        
+        <h1>Raças de cachorro</h1>
         <input type="text" id="search_input" placeholder="Buscar raça...">
+        <!-- colocar esse título e essa barra de pesquisa lado a lado depois no css -->
 
         <div id="dogs-container">
             <div class="dog-card">
@@ -81,6 +81,5 @@
             </div>
 
         </div>
-    </div>
 
 </html>
