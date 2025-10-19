@@ -17,53 +17,77 @@
 </head>
 
 <body>
-    <h1>The Dog API </h1>
+
 
     <div class="loginContainer" id="SecaoLogin">
+        <h1>The Dog API </h1>
         <section id="secao_login">
             <form id="form_login">
-                <label for="usuario">usuario</label>
-                <input name="usuario" type="text">
-                <br>
-                <label for="senha">senha</label>
-                <input type="password">
+                <label>usuario: <input type="text" placeholder="digite seu usuario"></label>
+                <br> <br>
+                <label>senha: <input type="password" placeholder="digite sua senha"></label>
                 <br><br>
-                <button name="btn_subimt" type="btn_subimt">Fazer login</button>
+                <button onclick="fazerLogin()">Fazer login</button>
                 <br><br>
+
+                <div class="link-container">
+                    <span>Não tem uma conta? </span>
+                    <a href="#" class="link-toggle" onclick="abrirCadastro()">Cadastre-se</a>
+                </div>
             </form>
-        </section>
+
+
+    </div>
+
 
     </div>
 
     <div class="cadastroContainer" id="SecaoCadastro">
+        <h1>fazer cadastro</h1>
         <section id="secao_cadastro">
             <form id="form_cadastro">
-                <label for="email">Email</label>
-                <input name="email" type="email">
-                <br>
+                <label for="email">Email: </label>
+                <input name="email" type="email" placeholder="digite seu email">
+                <br> <br>
 
-                <label for="usuario">Usuário</label>
-                <input name="usuario" type="text">
-                <br>
-
-                <label for="senha">Senha</label>
-                <input name="senha" type="password">
+                <label for="usuario">Usuário: </label>
+                <input name="usuario" type="text" placeholder="digite seu nome de usuario">
                 <br><br>
 
-                <button name="btn_subimt">Realizar cadastro</button>
+                <label for="senha">Senha: </label>
+                <input name="senha" type="password" placeholder="digite sua senha">
+                <br><br>
+
+                <button onclick="realizarCadastro()">Realizar cadastro</button>
+                <button onclick="cadastrarProduto()">voltar</button>
             </form>
-        </section>
+            <br>
+            <div class="link-container">
+                <span>Já tem uma conta? </span>
+                <a href="#" class="link-toggle" onclick="abrirLogin()">Fazer Login</a>
+            </div>
+
     </div>
 
-    <br>
-    <button id="cadastrar_produto">Cadastrar produto</button>
-    <br><br>
+     <div class="dashboardContainer" id="SecaoDashboard">
+        
+        <h1>Raças de Cachorros</h1>
+        
+        <button onclick="fazerLogout()">Sair</button>
 
-    <!-- <div class="info">
-            <span class="numero">#1</span>
-            <h3 class="nome">princesa</h3>
-            <small class="raça">Tipo: <span>bulldog</span></small>
-        </div> -->
-</body>
+        <input type="text" id="search_input" placeholder="Buscar raça...">
+
+        <div id="dogs_container">
+
+            <div class="dog-card">
+                <br><br>
+                <img src="" alt="Cachorro">
+                <div>Nome da Raça</div>
+                <div>Temperamento:</div>
+                <div>Tempo de vida:</div>
+            </div>
+
+        </div>
+    </div>
 
 </html>
