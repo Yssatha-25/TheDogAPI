@@ -19,69 +19,73 @@
 <body>
 
     <h1>The Dog API</h1>
-
+    <br><br>
     <div class="container" id="SecaoLoginDiv">
-        <h2>Login</h2>
-        <section id="secao_login">
-            <form id="form_login">
-                <label>Usuário: <input id="usuarioLogin" type="text" placeholder="Digite seu usuário"></label>
-                <br> <br>
-                <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
-                <br><br>
-                <button onclick="FazerLogin()">Fazer login</button>
-                <br><br>
+        <div class="login">
+            <h2>Login</h2>
+            <section id="secao_login">
+                <form id="form_login">
+                    <label>Usuário: <input id="usuarioLogin" type="text" placeholder="Digite seu usuário"></label>
+                    <br> <br>
+                    <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
+                    <br>
+                    <button onclick="FazerLogin()">Fazer login</button>
+                    <br><br>
 
-                <div class="link-container">
-                    <span>Não possui uma conta? </span>
-                    <a href="#" onclick="AbrirCadastro()">Cadastre-se</a>
-                </div>
-            </form>
+                    <div class="link-container">
+                        <span>Não possui uma conta? </span>
+                        <a href="#" onclick="AbrirCadastro()">Cadastre-se</a>
+                    </div>
+                </form>
+        </div>
     </div>
 
     <div class="container hidden" id="SecaoCadastroDiv">
-        <h2>Cadastro</h2>
-        <section id="secao_cadastro">
-            <form id="form_cadastro">
-                <label for="email">Email: </label>
-                <input id="emailCadastro" name="email" type="email" placeholder="Digite seu email">
-                <br><br>
+        <div class="cadastro">
+            <h2>Cadastro</h2>
+            <section id="secao_cadastro">
+                <form id="form_cadastro">
+                    <label for="email">Email: </label>
+                    <input id="emailCadastro" name="email" type="email" placeholder="Digite seu email">
+                    <br><br>
 
-                <label for="usuario">Usuário: </label>
-                <input id="usuarioCadastro" name="usuario" type="text" placeholder="Digite seu nome de usuário">
-                <br><br>
+                    <label for="usuario">Usuário: </label>
+                    <input id="usuarioCadastro" name="usuario" type="text" placeholder="Digite seu nome de usuário">
+                    <br><br>
 
-                <label for="senha">Senha: </label>
-                <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
-                <br><br>
+                    <label for="senha">Senha: </label>
+                    <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
+                    <br><br>
 
-                <button onclick="RealizarCadastro()">Realizar cadastro</button>
-            </form>
-            <br>
+                    <button onclick="RealizarCadastro()">Realizar cadastro</button>
+        </div>
+        </form>
+        <br>
 
-            <div class="link-container">
-                <span>Já tem uma conta? </span>
-                <a href="#" onclick="AbrirLogin()">Faça o Login</a>
-            </div>
+        <div class="link-container">
+            <span>Já tem uma conta? </span>
+            <a href="#" onclick="AbrirLogin()">Faça o Login</a>
+        </div>
         </section>
     </div>
 
     <div class="dashboardContainer hidden" id="SecaoDashboard">
         <button onclick="FazerLogout()">Fazer logout</button>
+        <div class="explorar">
+            <h1>Raças de cachorro</h1>
+            <input type="text" id="search_input" placeholder="Buscar raça..."> <br>
+            <!-- colocar esse título e essa barra de pesquisa lado a lado depois no css -->
+            <button onclick="BuscarRacas()">Pesquisar</button>
+            <button id="botaoLimparPesquisa" class="hidden" onclick="LimparPesquisa()">Limpar pesquisa</button>
 
-        <h1>Raças de cachorro</h1>
-        <input type="text" id="search_input" placeholder="Buscar raça...">
-        <!-- colocar esse título e essa barra de pesquisa lado a lado depois no css -->
-        <button onclick="BuscarRacas()">Pesquisar</button>
-        <button id="botaoLimparPesquisa" class="hidden" onclick="LimparPesquisa()">Limpar pesquisa</button>
-
-        <div id="dogs-container">
-            <div class="dog-card">
-                <h2>Nome da Raça</h2>
-                <img src="" alt="Cachorro">
-                <p>Temperamento:</p>
-                <p>Tempo de vida:</p>
+            <div id="dogs-container">
+                <div class="dog-card">
+                    <h2>Nome da Raça</h2>
+                    <img src="" alt="Cachorro">
+                    <p>Temperamento:</p>
+                    <p>Tempo de vida:</p>
+                </div>
             </div>
-
         </div>
 
 </html>

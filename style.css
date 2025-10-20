@@ -1,3 +1,218 @@
-.hidden{
+.hidden {
     display: none
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgb(139, 75, 192) 50%, rgb(131, 59, 224) 100%);
+    display: block;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+h1 {
+    color: rgb(60, 5, 82);
+    text-align: center;
+    margin-top: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+
+}
+
+h2 {
+     color: rgb(60, 5, 82);   margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+   color: rgb(60, 5, 82);
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+span {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+label {
+    font-size: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5px;
+     color: rgb(60, 5, 82);
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+
+.Login {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: aliceblue;
+
+}
+
+.login {
+
+    font-size: 50px;
+    display: inline-block;
+    padding: 8px 20px;
+    background: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aliceblue;
+    ;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500px;
+    transition: .5s;
+}
+
+.login {
+    position: relative;
+    height: 100%;
+    background: rgba(225, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+
+}
+
+
+.login:hover {
+    background: transparent;
+    box-shadow: none;
+    color: aliceblue;
+}
+
+
+.cadastro {
+    display: inline-block;
+    padding: 10px 30px;
+    background: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aliceblue;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.cadastro {
+    font-size: 30px;
+    position: relative;
+    height: 100%;
+    background: rgba(225, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+
+}
+
+
+.cadastro:hover {
+    background: transparent;
+    box-shadow: none;
+    color: aliceblue;
+}
+
+.explorar {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+
+
+}
+
+.explorar input {
+     width: 60%;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.295);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+   color: rgb(60, 5, 82);
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+button {
+    padding: 10px 20px;
+    background: rgba(211, 202, 218, 0.836);
+    border: 2px solid aliceblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aliceblue;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+    font-size: 20px;
+    cursor: pointer;
+
 }
