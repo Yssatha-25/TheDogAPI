@@ -28,7 +28,7 @@
                 <br> <br>
                 <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
                 <br><br>
-                <button onclick="FazerLogin()">Fazer login</button>
+                <button type="button" onclick="FazerLogin(event)">Fazer login</button>
                 <br><br>
 
                 <div class="link-container">
@@ -36,6 +36,7 @@
                     <a href="#" onclick="AbrirCadastro()">Cadastre-se</a>
                 </div>
             </form>
+        </section>
     </div>
 
     <div class="container hidden" id="SecaoCadastroDiv">
@@ -54,7 +55,7 @@
                 <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
                 <br><br>
 
-                <button onclick="RealizarCadastro()">Realizar cadastro</button>
+                <button type="button" onclick="RealizarCadastro(event)">Realizar cadastro</button>
             </form>
             <br>
 
@@ -62,6 +63,7 @@
                 <span>Já tem uma conta? </span>
                 <a href="#" onclick="AbrirLogin()">Faça o Login</a>
             </div>
+            </form>
         </section>
     </div>
 
@@ -83,5 +85,5 @@
             </div>
 
         </div>
-
+    </body>
 </html>
