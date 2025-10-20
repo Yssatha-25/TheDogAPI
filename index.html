@@ -21,6 +21,7 @@
     <h1>The Dog API</h1>
     <br><br>
     <div class="container" id="SecaoLoginDiv">
+<<<<<<< HEAD
         <div class="login">
             <h2>Login</h2>
             <section id="secao_login">
@@ -38,6 +39,24 @@
                     </div>
                 </form>
         </div>
+=======
+        <h2>Login</h2>
+        <section id="secao_login">
+            <form id="form_login">
+                <label>Usuário: <input id="usuarioLogin" type="text" placeholder="Digite seu usuário"></label>
+                <br> <br>
+                <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
+                <br><br>
+                <button type="button" onclick="FazerLogin(event)">Fazer login</button>
+                <br><br>
+
+                <div class="link-container">
+                    <span>Não possui uma conta? </span>
+                    <a href="#" onclick="AbrirCadastro()">Cadastre-se</a>
+                </div>
+            </form>
+        </section>
+>>>>>>> 048403f0a7c7d99287d0db25ac467dfc6a75685b
     </div>
 
     <div class="container hidden" id="SecaoCadastroDiv">
@@ -57,6 +76,7 @@
                     <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
                     <br><br>
 
+<<<<<<< HEAD
                     <button onclick="RealizarCadastro()">Realizar cadastro</button>
         </div>
         </form>
@@ -66,6 +86,17 @@
             <span>Já tem uma conta? </span>
             <a href="#" onclick="AbrirLogin()">Faça o Login</a>
         </div>
+=======
+                <button type="button" onclick="RealizarCadastro(event)">Realizar cadastro</button>
+            </form>
+            <br>
+
+            <div class="link-container">
+                <span>Já tem uma conta? </span>
+                <a href="#" onclick="AbrirLogin()">Faça o Login</a>
+            </div>
+            </form>
+>>>>>>> 048403f0a7c7d99287d0db25ac467dfc6a75685b
         </section>
     </div>
 
@@ -87,5 +118,5 @@
                 </div>
             </div>
         </div>
-
+    </body>
 </html>
