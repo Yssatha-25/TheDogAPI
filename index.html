@@ -1,7 +1,7 @@
 <!-- 
-    Link do live server do projeto:
-    http://localhost:5500 
--->
+        Link do live server do projeto:
+        http://localhost:5500 
+    -->
 
 
 <!DOCTYPE html>
@@ -24,9 +24,9 @@
         <h2>Login</h2>
         <section id="secao_login">
             <form id="form_login">
-                <label>usuario: <input type="text" placeholder="Digite seu usuário"></label>
+                <label>Usuário: <input id="usuarioLogin" type="text" placeholder="Digite seu usuário"></label>
                 <br> <br>
-                <label>senha: <input type="password" placeholder="Digite sua senha"></label>
+                <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
                 <br><br>
                 <button onclick="FazerLogin()">Fazer login</button>
                 <br><br>
@@ -43,15 +43,15 @@
         <section id="secao_cadastro">
             <form id="form_cadastro">
                 <label for="email">Email: </label>
-                <input name="email" type="email" placeholder="Digite seu email">
+                <input id="emailCadastro" name="email" type="email" placeholder="Digite seu email">
                 <br><br>
 
                 <label for="usuario">Usuário: </label>
-                <input name="usuario" type="text" placeholder="Digite seu nome de usuário">
+                <input id="usuarioCadastro" name="usuario" type="text" placeholder="Digite seu nome de usuário">
                 <br><br>
 
                 <label for="senha">Senha: </label>
-                <input name="senha" type="password" placeholder="Digite sua senha">
+                <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
                 <br><br>
 
                 <button onclick="RealizarCadastro()">Realizar cadastro</button>
@@ -67,10 +67,12 @@
 
     <div class="dashboardContainer hidden" id="SecaoDashboard">
         <button onclick="FazerLogout()">Fazer logout</button>
-        
+
         <h1>Raças de cachorro</h1>
         <input type="text" id="search_input" placeholder="Buscar raça...">
         <!-- colocar esse título e essa barra de pesquisa lado a lado depois no css -->
+        <button onclick="BuscarRacas()">Pesquisar</button>
+        <button id="botaoLimparPesquisa" class="hidden" onclick="LimparPesquisa()">Limpar pesquisa</button>
 
         <div id="dogs-container">
             <div class="dog-card">
