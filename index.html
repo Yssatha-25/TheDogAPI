@@ -20,8 +20,7 @@
 
     <h1>The Dog API</h1>
     <br><br>
-    <div class="container" id="SecaoLoginDiv">
-<<<<<<< HEAD
+    <div class="containerlogin" id="SecaoLoginDiv">
         <div class="login">
             <h2>Login</h2>
             <section id="secao_login">
@@ -30,7 +29,7 @@
                     <br> <br>
                     <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
                     <br>
-                    <button onclick="FazerLogin()">Fazer login</button>
+                    <button onclick="FazerLogin(event)">Fazer login</button>
                     <br><br>
 
                     <div class="link-container">
@@ -39,27 +38,10 @@
                     </div>
                 </form>
         </div>
-=======
-        <h2>Login</h2>
-        <section id="secao_login">
-            <form id="form_login">
-                <label>Usuário: <input id="usuarioLogin" type="text" placeholder="Digite seu usuário"></label>
-                <br> <br>
-                <label>Senha: <input id="senhaLogin" type="password" placeholder="Digite sua senha"></label>
-                <br><br>
-                <button type="button" onclick="FazerLogin(event)">Fazer login</button>
-                <br><br>
-
-                <div class="link-container">
-                    <span>Não possui uma conta? </span>
-                    <a href="#" onclick="AbrirCadastro()">Cadastre-se</a>
-                </div>
-            </form>
-        </section>
->>>>>>> 048403f0a7c7d99287d0db25ac467dfc6a75685b
+   
     </div>
 
-    <div class="container hidden" id="SecaoCadastroDiv">
+    <div class="hidden" id="SecaoCadastroDiv">
         <div class="cadastro">
             <h2>Cadastro</h2>
             <section id="secao_cadastro">
@@ -76,17 +58,6 @@
                     <input id="senhaCadastro" name="senha" type="password" placeholder="Digite sua senha">
                     <br><br>
 
-<<<<<<< HEAD
-                    <button onclick="RealizarCadastro()">Realizar cadastro</button>
-        </div>
-        </form>
-        <br>
-
-        <div class="link-container">
-            <span>Já tem uma conta? </span>
-            <a href="#" onclick="AbrirLogin()">Faça o Login</a>
-        </div>
-=======
                 <button type="button" onclick="RealizarCadastro(event)">Realizar cadastro</button>
             </form>
             <br>
@@ -96,19 +67,19 @@
                 <a href="#" onclick="AbrirLogin()">Faça o Login</a>
             </div>
             </form>
->>>>>>> 048403f0a7c7d99287d0db25ac467dfc6a75685b
         </section>
     </div>
-
-    <div class="dashboardContainer hidden" id="SecaoDashboard">
-        <button onclick="FazerLogout()">Fazer logout</button>
+</div>
+    <div class="hidden" id="SecaoDashboard">
         <div class="explorar">
+        <button onclick="FazerLogout()">Fazer logout</button>
             <h1>Raças de cachorro</h1>
-            <input type="text" id="search_input" placeholder="Buscar raça..."> <br>
+            <input type="text" id="search_input" placeholder="Buscar raça..."> <br><br>
             <!-- colocar esse título e essa barra de pesquisa lado a lado depois no css -->
-            <button onclick="BuscarRacas()">Pesquisar</button>
-            <button id="botaoLimparPesquisa" class="hidden" onclick="LimparPesquisa()">Limpar pesquisa</button>
+            <button onclick="BuscarRacas()">Pesquisar</button>  <button id="botaoLimparPesquisa" class="hidden" onclick="LimparPesquisa()">Limpar pesquisa</button>
 
+            <br><br>
+           
             <div id="dogs-container">
                 <div class="dog-card">
                     <h2>Nome da Raça</h2>

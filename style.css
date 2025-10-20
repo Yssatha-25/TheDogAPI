@@ -1,5 +1,5 @@
 .hidden {
-    display: none
+    display: none;
 }
 
 * {
@@ -8,8 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    align-items: center;
-    text-align: center;
 
 
 }
@@ -20,6 +18,9 @@ body {
     display: block;
     justify-content: center;
     margin-top: 80px;
+    align-items: center;
+    text-align: center;
+
 
 }
 
@@ -45,7 +46,8 @@ h1 {
 }
 
 h2 {
-     color: rgb(60, 5, 82);   margin-bottom: 20px;
+    color: rgb(60, 5, 82);
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -59,7 +61,7 @@ input {
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 30px;
     backdrop-filter: blur(30px);
-   color: rgb(60, 5, 82);
+    color: rgb(60, 5, 82);
     font-size: 18px;
     outline: none;
     margin-bottom: 20px;
@@ -83,9 +85,10 @@ span {
 a {
     text-decoration: none;
     font-size: 30px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
 label {
     font-size: 40px;
     color: aliceblue;
@@ -94,11 +97,14 @@ label {
     margin: 35px;
     border-bottom: 2px solid transparent;
     transition: .5px;
-     color: rgb(60, 5, 82);
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+    color: rgb(60, 5, 82);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
+input::placeholder {
+    color: rgb(213, 215, 218);
+}
 
 .Login {
     display: flex;
@@ -185,16 +191,17 @@ label {
     width: 100%;
 
 
+
 }
 
 .explorar input {
-     width: 60%;
+    width: 60%;
     padding: 8px 10px;
     background: rgba(255, 255, 255, 0.295);
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 30px;
     backdrop-filter: blur(30px);
-   color: rgb(60, 5, 82);
+    color: rgb(60, 5, 82);
     font-size: 18px;
     outline: none;
     margin-bottom: 20px;
@@ -215,4 +222,25 @@ button {
     font-size: 20px;
     cursor: pointer;
 
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+    max-width: 600px;
+    max-height: 600px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    border: 2px solid aliceblue;
+    background-color: rgba(211, 202, 218, 0.836);
+    border-radius: 25px;
+    display: block;
+    padding: 2%;
+    color: rgb(60, 5, 82);
 }

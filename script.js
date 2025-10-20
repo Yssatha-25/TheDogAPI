@@ -1,6 +1,6 @@
 
 const urlBase = "https://api.thedogapi.com/v1"
-const chaveAPI = "live_wI4P9KK5UZPUPmZ3uN44sp05bhjLnkCRj9RcthA9D41ugrwz9EFr7wCvmN2p0jkz"
+const chaveAPI = "live_qHMkagi03731t8IrxY18JSmZVROc0IQ3gCmOg3MKClwo8XO8kOQSARMD4IlYRDU6"
 
 const headers = new Headers({
     "Content-Type": "application/json",
@@ -157,6 +157,9 @@ function VerificarSessao() {
 async function CarregarRacas() {
     try {
         const resposta = await fetch(`${urlBase}/breeds`, requestOptions)
+        if(resposta.ok != true){
+            console.log("Teste1", `${urlBase}/breeds`, resposta.ok)
+        }
         const dados = await resposta.json()
         ExibirRacas(dados)
     } catch (erro) {
@@ -173,6 +176,9 @@ async function BuscarRacas() {
 
     try {
         const resposta = await fetch(`${urlBase}/breeds/search?q=${termo}`, requestOptions)
+        if(!resposta.ok != true){
+            console.log("Teste2")
+        }
         const dados = await resposta.json()
 
         if (dados.length === 0) {
@@ -196,11 +202,15 @@ function ExibirRacas(racas) {
         const imgUrl = raca.image ? raca.image.url : "https://via.placeholder.com/200x150"
 
         card.innerHTML = `
+                <div class="container">
                 <h2>${raca.name}</h2>
                 <img src="${imgUrl}" alt="${raca.name}">
+                <br><br>
                 <p><strong>Temperamento:</strong> ${raca.temperament || "Não informado"}</p>
                 <p><strong>Tempo de vida:</strong> ${raca.life_span || "Desconhecida"}</p>
-            `
+                </div>
+                <br><br><br>            
+                `
 
         dogsContainer.appendChild(card)
     }
